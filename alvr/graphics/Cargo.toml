@@ -1,0 +1,16 @@
+[package]
+name = "alvr_graphics"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+alvr_common.workspace = true
+
+ash = "0.37"
+pollster = "0.3"
+rend3 = { git = "https://github.com/BVE-Reborn/rend3" }
+wgpu = "0.19"
+wgpu-core = { version = "0.19", features = ["vulkan"] }
